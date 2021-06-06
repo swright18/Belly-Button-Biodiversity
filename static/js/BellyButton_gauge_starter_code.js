@@ -5,13 +5,13 @@ function buildCharts(sample) {
     console.log(data);
 
     // Create a variable that holds the samples array. 
-
+sampleData
     // Create a variable that filters the samples for the object with the desired sample number.
-
+buildingArray
     // 1. Create a variable that filters the metadata array for the object with the desired sample number.
 
     // Create a variable that holds the first sample in the array.
-  
+var results
 
     // 2. Create a variable that holds the first sample in the metadata array.
     
@@ -44,3 +44,17 @@ function buildCharts(sample) {
     Plotly.newPlot();
   });
 }
+
+
+var data = [
+	{
+		domain: { x: [0, 1], y: [0, 1] },
+		value: 270,
+		title: { text: "Speed" },
+		type: "indicator",
+		mode: "gauge+number"
+	}
+];
+
+var layout = { width: 600, height: 500, margin: { t: 0, b: 0 } };
+Plotly.newPlot('myDiv', data, layout);
