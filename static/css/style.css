@@ -1,0 +1,34 @@
+* {
+  font-family: 'Quicksand';
+}
+
+.jumbotron {
+  background: url("../images/bacteria.jpg");
+  background-size: cover;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ffffff ;
+  color: rgb(51, 45, 87);
+  align-items: center;
+}
+
+.panel {
+  background-color: rgb(51, 45, 87);
+  color: #56be85
+}
+
+.panel-title {
+  background-color:rgb(51, 45, 87);
+  color: #56be85
+}
+
+.well {
+  background-color: rgb(51, 45, 87);
+  color: #56be85
+}

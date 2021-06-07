@@ -87,6 +87,10 @@ function buildCharts(sample) {
                 text: otu_labels.slice(0, 10).reverse(),
                 type: "bar",
                 orientation: "h",
+                marker: {
+                    color: otu_ids,
+                    colorscale: "Viridis",
+                }
             }
         ];
         // 9. Create the layout for the bar chart.
@@ -108,8 +112,7 @@ function buildCharts(sample) {
                 marker: {
                     size: sample_values,
                     color: otu_ids,
-                    colorscale: "Earth"
-
+                    colorscale: "Viridis",
                 }
             }
         ];
@@ -131,18 +134,18 @@ function buildCharts(sample) {
             {
                 domain: { x: [0, 1], y: [0, 1] },
                 value: washingFrequency,
-                title: { text: "Belly Button Washing Frequency" },
+                title: { text: "Belly Button Washing<br><span style='font-size:0.8em;color:gray'>Scrubs Per Week</span>" },
                 type: "indicator",
                 mode: "gauge+number",
                 gauge: { 
                     axis: {range: [null, 10]},
                     bar: {color: "black"},
                     steps: [
-                        {range: [0,2], color: "red"}, 
-                        {range: [2,4], color: "orange"},
-                        {range: [4,6], color: "yellow"},
-                        {range: [6,8], color: "yellowgreen"},
-                        {range: [8,10], color: "green"},
+                        {range: [0,2], color: "darkslategray"}, 
+                        {range: [2,4], color: "teal"},
+                        {range: [4,6], color: "cadetblue"},
+                        {range: [6,8], color: "lightblue"},
+                        {range: [8,10], color: "aliceblue"},
                     ]
                 }
             }
